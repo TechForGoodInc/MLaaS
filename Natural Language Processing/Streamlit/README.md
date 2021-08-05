@@ -1,25 +1,13 @@
-# multi-page-app
+## How to Reproduce this Web Application
 
-# Watch the tutorial video
-[How to Make a Multi-Page Web App | Streamlit #16](https://youtu.be/nSw96qUbK9o)
-
-<a href="https://youtu.be/nSw96qUbK9o"><img src="http://img.youtube.com/vi/nSw96qUbK9o/0.jpg" alt="How to Make a Multi-Page Web App | Streamlit #16" title="How to Make a Multi-Page Web App | Streamlit #16" width="400" /></a>
-
-# Demo
-
-Launch the web app:
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/multi-page-app/main/app.py)
-
-# Reproducing this web app
 To recreate this web app on your own computer, do the following.
 
 ### Create conda environment
-Firstly, we will create a conda environment called *multipage*
+Firstly, we will create a conda environment called *tfg-nlp*
 ```
 conda create -n multipage python=3.7.9
 ```
-Secondly, we will login to the *multipage* environement
+Secondly, we will login to the *tfg-nlp* environement
 ```
 conda activate multipage
 ```
@@ -28,8 +16,7 @@ conda activate multipage
 Download requirements.txt file
 
 ```
-wget https://raw.githubusercontent.com/dataprofessor/ml-auto-app/main/requirements.txt
-
+wget https://github.com/TechForGoodInc/MLaaS/blob/main/Natural%20Language%20Processing/Streamlit/requirements.txt
 ```
 
 Pip install libraries
@@ -37,12 +24,14 @@ Pip install libraries
 pip install -r requirements.txt
 ```
 
-### Download and unzip this repo
+### Download and unzip this directory
 
-Download [this repo](https://github.com/dataprofessor/multi-page-app/archive/main.zip) and unzip as your working directory.
+Download [this directory](https://github.com/TechForGoodInc/MLaaS/tree/main/Natural%20Language%20Processing/Streamlit) and unzip as your working directory.
 
 ###  Launch the app
 
 ```
 streamlit run app.py
 ```
+
+** Please note, the requirements.txt file is not fully customized to this particular application. Will be updated soon accordingly.
