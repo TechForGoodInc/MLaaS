@@ -2,6 +2,6 @@
     "input_dir":"../data/",
     "logging":"False",
 
-    "train_path":"../data//tiny_motorbike",
+    "train_path":"../data/tiny_motorbike",
     "verbose":10
 }
