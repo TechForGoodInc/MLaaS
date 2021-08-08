@@ -1,0 +1,8 @@
+{
+    "input_dir":"../data/",
+    "logging":"False",
+
+    "train_path":"../data/grocery20/",
+    "test_path":"../data/grocery20/",
+
+}
