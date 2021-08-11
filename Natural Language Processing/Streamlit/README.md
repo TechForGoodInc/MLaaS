@@ -5,11 +5,11 @@ To recreate this web app on your own computer, do the following.
 ### Create conda environment
 Firstly, we will create a conda environment called *tfg-nlp*
 ```
-conda create -n multipage python=3.7.9
+conda create -n tfg-nlp python=3.7.9
 ```
 Secondly, we will login to the *tfg-nlp* environement
 ```
-conda activate multipage
+conda activate tfg-nlp
 ```
 ### Install prerequisite libraries
 
