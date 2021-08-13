@@ -11,7 +11,6 @@ st.markdown("""
 # Tech For Good Inc
 Making the world a beter place - one line of code at a time
 
-#Created by : Siti Khotijah, 07/29/2021
 
 """)
 
@@ -28,3 +27,6 @@ app.add_app("Webcam Face Recognition", WebcamFaceRecognition.app)
 
 # The main app
 app.run()
+
+
+# Created by : Siti Khotijah, 07/29/2021
