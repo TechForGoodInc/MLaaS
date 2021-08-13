@@ -11,7 +11,7 @@ st.markdown("""
 # Tech For Good Inc
 Making the world a beter place - one line of code at a time
 
-Created by : Siti Khotijah, 07/29/2021
+#Created by : Siti Khotijah, 07/29/2021
 
 """)
 
