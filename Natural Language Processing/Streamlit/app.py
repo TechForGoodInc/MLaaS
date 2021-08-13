@@ -1408,7 +1408,7 @@ def main():
                                                            
                                 c_vec = CountVectorizer(stop_words=stoplist, ngram_range=(2,2))
                                 # matrix of ngrams
-                                bgrams = c_vec.fit_transform(df['full_text'])
+                                bgrams = c_vec.fit_transform(df[col_name])
                                 # count frequency of ngrams
                                 count_values = bgrams.toarray().sum(axis=0)
                                 # list of ngrams
@@ -1435,7 +1435,7 @@ def main():
                                                            
                                 c_vec = CountVectorizer(stop_words=stoplist, ngram_range=(3,3))
                                 # matrix of ngrams
-                                tgrams = c_vec.fit_transform(df['full_text'])
+                                tgrams = c_vec.fit_transform(df[col_name])
                                 # count frequency of ngrams
                                 count_values = tgrams.toarray().sum(axis=0)
                                 # list of ngrams
@@ -1464,7 +1464,7 @@ def main():
                                 from sklearn.feature_extraction.text import CountVectorizer
                                 c_vec = CountVectorizer(stop_words=stoplist, ngram_range=(2,3))
                                 # matrix of ngrams
-                                ngrams = c_vec.fit_transform(df['full_text'])
+                                ngrams = c_vec.fit_transform(df[col_name])
                                 # count frequency of ngrams
                                 count_values = ngrams.toarray().sum(axis=0)
                                 # list of ngrams
@@ -1661,7 +1661,7 @@ def main():
     if choice == "Sentiment Analysis":
 
         menu_main = ["Unsupervised", "Supervised"]
-        choice_main = st.selectbox("Unsupervised", menu_main)
+        choice_main = st.selectbox("Select", menu_main)
 
         if choice_main == "Unsupervised":
 
