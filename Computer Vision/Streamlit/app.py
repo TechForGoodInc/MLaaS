@@ -1,6 +1,6 @@
 import streamlit as st
 from multiapp import MultiApp
-from apps import home, canny, cartoonApp, imageannotation,imageResize, WebcamFaceRecognition #, FaceDetection, eyes , imageclassification # import your app modules here
+from apps import home, canny, cartoonApp, imageannotation,imageResize, WebcamFaceRecognition, estimation #, FaceDetection, eyes , imageclassification # import your app modules here
 app = MultiApp()
 
 
@@ -21,6 +21,7 @@ app.add_app("Cartoon", cartoonApp.app)
 app.add_app("Image Annotation", imageannotation.app)
 app.add_app("Image Resize", imageResize.app)
 app.add_app("Webcam Face Recognition", WebcamFaceRecognition.app)
+app.add_app("Human Pose Estimation", estimation.app)
 #app.add_app("Eyes Detection", eyes.app)
 #app.add_app("Face Detection", FaceDetection.app)
 #app.add_app("Image Classification", imageclassification.app)
