@@ -5,7 +5,7 @@ import numpy as np
 import cv2
 
 def app():
-    st.title("Human Pose Estimation OpenCV")
+    st.title("Human Pose Estimation")
 
 
 
