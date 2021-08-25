@@ -33,5 +33,3 @@ Download [this directory](https://github.com/TechForGoodInc/MLaaS/tree/main/Natu
 ```
 streamlit run app.py
 ```
-
-** Please note, the requirements.txt file is not fully customized to this particular application. Will be updated soon accordingly.
