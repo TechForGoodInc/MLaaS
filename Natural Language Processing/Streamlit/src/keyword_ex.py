@@ -18,7 +18,7 @@ import yake
 
 def input():
     no_kw = st.number_input("How many Keywords do you want?")
-    n_gram = st.slider("Enter the n-gram", 1, 20)
+    n_gram = st.slider("Enter the n-gram", 1, 20, value=1)
     raw_text = st.text_area("Your Text")
     return no_kw, n_gram, raw_text
 
@@ -586,8 +586,8 @@ def rake_():
             
     st.subheader("Rapid Automatic Keyword Extraction")
     no_kw = st.number_input("How many Keywords do you want?")
-    min_len = st.slider("Enter Integer for minimum n_gram", 1, 10)
-    max_len = st.slider("Enter Integer for maximum n_gram", 1, 20)
+    min_len = st.slider("Enter Integer for minimum n_gram", 1, 10, value=1)
+    max_len = st.slider("Enter Integer for maximum n_gram", 1, 20, value=1)
     raw_text = st.text_area("Your Text")
 
     if st.button("Show Keywords"):
@@ -598,7 +598,7 @@ def yake_():
 
     st.subheader("Light-weight unsupervised automatic keyword extraction")
     no_kw = st.number_input("How many Keywords do you want?")
-    max_len = st.slider("Enter Integer for maximum n_gram", 1, 20)
+    max_len = st.slider("Enter Integer for maximum n_gram", 1, 20, value=1)
     raw_text = st.text_area("Your Text")
 
     if st.button("Show Keywords"):
@@ -607,4 +607,3 @@ def yake_():
 
             
         
-
