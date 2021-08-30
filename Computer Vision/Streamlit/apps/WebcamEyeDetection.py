@@ -5,7 +5,7 @@ def app():
     st.title("Webcam Eye Detection")
     camera_index = 0
 
-    eye_cascade = cv2.CascadeClassifier(r'C:\Users\komp18\Streamlit\data\haarcascade_eye.xml')
+    eye_cascade = cv2.CascadeClassifier(r'C:\Users\skhot\Streamlit\data\haarcascade_eye.xml')
     cap = cv2.VideoCapture(camera_index)
     FRAME_WINDOW = st.image([])
 
