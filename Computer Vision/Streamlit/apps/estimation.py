@@ -28,7 +28,7 @@ def app():
     inWidth = width
     inHeight = height
 
-    net = cv2.dnn.readNetFromTensorflow(r"C:\Users\komp18\Streamlit\data\graph_opt.pb")
+    net = cv2.dnn.readNetFromTensorflow(r"C:\Users\skhot\Streamlit\data\graph_opt.pb")
 
 
 
