@@ -4,4 +4,5 @@ scikit-learn==0.23.2
 numpy==1.19.2
 opencv-python==4.1.2.30
 opencv-python-headless
+torch
 
