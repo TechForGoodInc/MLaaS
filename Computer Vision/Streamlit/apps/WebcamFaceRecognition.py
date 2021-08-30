@@ -8,7 +8,7 @@ def app():
     camera_index = 0
 
     vc = cv2.VideoCapture(camera_index)
-    detector = cv2.CascadeClassifier(r"C:\Users\komp18\Streamlit\data\haarcascade_frontalface_default.xml")
+    detector = cv2.CascadeClassifier(r"C:\Users\skhot\Streamlit\data\haarcascade_frontalface_default.xml")
 
     FRAME_WINDOW = st.image([])
 
