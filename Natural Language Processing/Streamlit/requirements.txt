@@ -5,5 +5,9 @@ flair==0.8.0.post1
 nltk==3.4.5
 rake-nltk==1.0.4
 regex==2021.7.6
+spacy==3.1.2
+transformers==4.8.2
+sumy @ git+git://github.com/miso-belica/sumy.git@5715e526830936d75645fd73ae54a41a870113a2
 pke @ git+https://github.com/boudinfl/pke.git@49d3522849cf598f24be9ed102be66f720963fca
 yake @ git+https://github.com/LIAAD/yake@f35bbc0e2f47e733233a182f69ea3aed4a82f9a5
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.1.0/en_core_web_sm-3.1.0-py3-none-any.whl
