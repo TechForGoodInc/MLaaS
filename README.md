@@ -8,8 +8,9 @@ Currently, it offers the following services:
 
 - Keyword Extraction: keyBERT, PKE, RAKE, YAKE
 - Topic Modelling: Latent Dirichlet Allocation, Hierarchical Dirichlet Process, Non-negative Matrix Factorization
-- Sentiment Analysis: Unsupervised- TextBlob, Vader, SentiWordNet
+- Sentiment Analysis: Unsupervised- TextBlob, Vader
 - Text Summarization: spaCy, LSA, Luhn, KL-Sum
+- Information Extraction: POS Tagging & Named Entity Recognition (NLTK, spaCy)
 
 A few more will be added soon:
 
