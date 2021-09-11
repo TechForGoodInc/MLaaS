@@ -68,7 +68,8 @@ def sa_vader(df, col_name):
 
 def sent():
 
-	st.subheader("Rule Based Sentiment Analysis")
+	#st.subheader("Rule Based Sentiment Analysis")
+	st.markdown("<h3 style='text-align: center;'>Rule Based Sentiment Analysis</h3>", unsafe_allow_html=True)
 	uploaded_file = st.file_uploader("Choose a file")
 
 	while True:

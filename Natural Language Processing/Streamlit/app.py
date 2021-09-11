@@ -4,6 +4,7 @@ import sys
 from src.keyword_ex import *
 from src.text_summarizer import *
 from src.sentiment import *
+from src.pos_ner import *
 import en_core_web_sm
 
 
@@ -15,7 +16,7 @@ if __name__ == '__main__':
 
     #st.title("Natural Language Processing")
 
-    menu = ["Keyword Extraction", "Text Summarization", "Sentiment Analysis"]
+    menu = ["Keyword Extraction", "Information Extraction", "Text Summarization", "Sentiment Analysis"]
     choice = st.sidebar.selectbox("Natural Language Processing", menu)
 
     if choice == "Keyword Extraction":
@@ -38,6 +39,9 @@ if __name__ == '__main__':
             rake_()
         if choice_main == "YAKE":
             yake_()
+
+    if choice == "Information Extraction":
+        posner()
 
     if choice == "Text Summarization":
 
@@ -152,19 +156,10 @@ if __name__ == '__main__':
     if choice == "Sentiment Analysis":
         sent()
 
+    
+
         
 
-        #if uploaded_file is not None:
 
-            
-            
-
-                
-                
-            #else:
-                #st.warning('Please write the column name to proceed.')
-
-        #else:
-            #st.warning('Please upload the csv file to proceed.')
 
         
