@@ -1,17 +1,21 @@
 import streamlit as st
+import numpy as np
+import sys
 from src.keyword_ex import *
 from src.text_summarizer import *
+from src.sentiment import *
 import en_core_web_sm
 
 
 if __name__ == '__main__':
+
 
     st.markdown("<h1 style='text-align: center;'>Natural Language Processing</h1>", unsafe_allow_html=True)
     st.markdown("<span style=“background-color:#121922”>",unsafe_allow_html=True)
 
     #st.title("Natural Language Processing")
 
-    menu = ["Keyword Extraction", "Text Summarization"]
+    menu = ["Keyword Extraction", "Text Summarization", "Sentiment Analysis"]
     choice = st.sidebar.selectbox("Natural Language Processing", menu)
 
     if choice == "Keyword Extraction":
@@ -144,3 +148,23 @@ if __name__ == '__main__':
                                 
                         tmp_download_link = download_link(summary, 'summary_gpt2.txt', 'Download Text')
                         st.markdown(tmp_download_link, unsafe_allow_html=True)
+
+    if choice == "Sentiment Analysis":
+        sent()
+
+        
+
+        #if uploaded_file is not None:
+
+            
+            
+
+                
+                
+            #else:
+                #st.warning('Please write the column name to proceed.')
+
+        #else:
+            #st.warning('Please upload the csv file to proceed.')
+
+        
