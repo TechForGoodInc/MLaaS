@@ -133,7 +133,3 @@ def sent():
 		except ValueError:
 			st.warning('Please upload the csv file to proceed.')
 			break
-
-
-
-

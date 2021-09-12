@@ -604,6 +604,3 @@ def yake_():
     if st.button("Show Keywords"):
             df = yake(raw_text, no_kw)
             write_df(df)
-
-            
-        

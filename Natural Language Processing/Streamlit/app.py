@@ -154,12 +154,4 @@ if __name__ == '__main__':
                         st.markdown(tmp_download_link, unsafe_allow_html=True)
 
     if choice == "Sentiment Analysis":
-        sent()
-
-    
-
-        
-
-
-
-        
+        sent() 
