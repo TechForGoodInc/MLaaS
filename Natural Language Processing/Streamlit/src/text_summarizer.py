@@ -71,7 +71,7 @@ def spacy_sum(text, no_sent):
     
     return summary
 
-
+#lsa
 def lsa_sum(text, no_sent):
 
     LANGUAGE = "english"
@@ -93,7 +93,7 @@ def lsa_sum(text, no_sent):
     summary = ''.join(ss)
     return summary
 
-
+#luhn
 def luhn_sum(text, no_sent):
 
     parser=PlaintextParser.from_string(text,Tokenizer('english'))
@@ -113,6 +113,7 @@ def luhn_sum(text, no_sent):
     summary = ''.join(ss)
     return summary
 
+#kl
 def kl_sum(text, no_sent): 
     
     parser=PlaintextParser.from_string(text,Tokenizer('english'))
@@ -132,7 +133,7 @@ def kl_sum(text, no_sent):
         summary = ''.join(ss)
         return summary
 
-
+#t5
 def t5_abs(text):
 
 	# Importing requirements
@@ -152,7 +153,7 @@ def t5_abs(text):
 	t5_summary = tokenizer.decode(summary_ids[0])
 	return (t5_summary)
 
-
+#gpt2 abstractive
 def gpt2_abs(text):
 
 	# Importing model and tokenizer
@@ -170,7 +171,7 @@ def gpt2_abs(text):
 	GPT_summary=tokenizer.decode(summary_ids[0],skip_special_tokens=True)
 	return (GPT_summary)
 
-
+#bart abtractive
 def bart_abs(text):
 
 	# Importing the model
@@ -189,6 +190,7 @@ def bart_abs(text):
 	bart_summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
 	return (bart_summary)
 
+#xlm abtractive
 def xlm_abs(text):
 
 	# Importing model and tokenizer
